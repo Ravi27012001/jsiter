@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+1.const Find_Digits = (N) => 
+{
+  let sum = 0;
+  while (N>0){
+    N = parseInt(N/10);
+    sum = sum + 1;
+  }
+	 return sum ;
+};
+
+2.
+const Find_Five = (N) => 
+{
+	 let n = N;
+	 let count = 0 ;
+	 while (n!=0){
+	   let x = n % 10;
+	   n = parseInt (n / 10);
+	   if(x==5){
+	     ++count;
+	   }
+	   
+	 }
+	 return count
+};
+3.
+const findSum = (n) => {
+  let a = 2;
+  let sum = 0;
+    for( a; a<=n; (a=a+2)){
+      sum = sum + a;
+     
+    }
+      return sum ;
+};
+
+4.
+const Number_Sum = (N) => 
+// {
+//   let sum = 0;
+//   for (let n = N; n > 0; (n=parseInt(n/10))){
+// 	 var rem = n % 10;
+// 	  sum = sum + rem ;
+// 	}
+// 	console.log(sum);
+// };
+{
+ let n = N;
+let sum = 0;
+while (n > 0){
+  let rem = n % 10;
+  sum = sum + rem ;
+  n = parseInt(n / 10);
+}
+return sum;
+}
+5.
+const Print_Odd = (N) => 
+{
+	 console.log("2");
+	 for(let a = 3;a<=N;(a=a+2)){
+	   console.log(a);
+	 }
+};
+
+6.
+
+const Print_pattern = (N) => 
+{
+  let a=" ";
+for(let i=1;i<=N;i++){
+  
+  for(let j=1;j<=i;j++){
+    a+="*";
+  }
+  a+="\n";
+}
+console.log(a);
+};
+
+7.
+const Prime_Check = (N) => 
+{
+	 if (N < 2){
+	   return "NO"
+	   
+	 }
+	  
+	 for(let i = 2; i <= N ; i++){
+	   if (N % i === 0){
+	   
+	   return "NO" 
+	   
+	 }
+	   
+	   else{
+	     return "YES"
+	   }
+	 
+}	 
+
+};
+
+
+8.
+const printNumbers = (n) => {
+    
+    for(let a = 1; a<=n;a++ ){
+      console.log(a);
+    }
+};
+
+9.
+const Print_Table = (N) => 
+{
+	for(let i =1;i<=10;i++){
+	  console.log( N + " * " + i + " = " + N*i);
+	}
+};
+
+
+
+
+
+
+</body>
+</html>
